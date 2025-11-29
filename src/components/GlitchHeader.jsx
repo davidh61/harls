@@ -13,7 +13,7 @@ const GlitchHeader = ({ text = "harls" }) => {
     }, []);
 
     return (
-        <div className="relative inline-block text-6xl md:text-8xl font-black tracking-tighter select-none">
+        <div className="relative inline-block text-6xl md:text-8xl font-black tracking-tighter select-none text-center">
             <motion.h1
                 className="relative z-10 text-white mix-blend-difference"
                 animate={{

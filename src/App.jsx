@@ -28,7 +28,7 @@ function App() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
-          className="mt-6 font-mono text-sm text-neutral-500 tracking-[0.5em] uppercase"
+          className="mt-6 font-mono text-sm text-neutral-500 tracking-[0.5em] uppercase text-center px-4"
         >
           Editor / Photographer / Legend
         </motion.p>
