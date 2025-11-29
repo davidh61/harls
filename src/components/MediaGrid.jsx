@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import VideoModal from './VideoModal';
 
 const items = [
@@ -13,6 +14,15 @@ const items = [
 
 const MediaGrid = () => {
     const [selectedVideo, setSelectedVideo] = useState(null);
+    const navigate = useNavigate();
+
+    const handleItemClick = (item) => {
+        if (item.type === 'video') {
+            setSelectedVideo(item);
+        } else {
+            navigate(`/project/${item.id}`);
+        }
+    };
 
     return (
         <>
@@ -24,7 +34,7 @@ const MediaGrid = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: index * 0.1 }}
                         className="group relative overflow-hidden border border-neutral-800 bg-neutral-900 cursor-pointer"
-                        onClick={() => item.type === 'video' && setSelectedVideo(item)}
+                        onClick={() => handleItemClick(item)}
                     >
                         <div className="aspect-video w-full overflow-hidden">
                             <img
