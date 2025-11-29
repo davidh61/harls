@@ -23,14 +23,14 @@ function App() {
 
       {/* Hero Section */}
       <section className="h-screen w-full flex flex-col items-center justify-center relative overflow-hidden">
-        <GlitchHeader text="harls" />
+        <GlitchHeader text="harlow" />
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
           className="mt-6 font-mono text-sm text-neutral-500 tracking-[0.5em] uppercase"
         >
-          Director / Editor / Photographer
+          Editor / Photographer / Legend
         </motion.p>
 
         <div className="absolute bottom-10 animate-bounce">
