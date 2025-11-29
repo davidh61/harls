@@ -27,14 +27,22 @@ const VideoModal = ({ isOpen, onClose, videoSrc, title }) => {
                         </button>
 
                         {/* Video Placeholder (Replace with iframe or video tag) */}
-                        <div className="w-full h-full flex items-center justify-center bg-neutral-900 text-neutral-500 font-mono">
-                            {/* Simulating a video player */}
-                            <div className="text-center">
-                                <p className="mb-4 text-xl text-white tracking-widest">PLAYING: {title}</p>
-                                <div className="w-16 h-16 border-2 border-white rounded-full flex items-center justify-center mx-auto hover:scale-110 transition-transform cursor-pointer">
-                                    <div className="w-0 h-0 border-t-[10px] border-t-transparent border-l-[20px] border-l-white border-b-[10px] border-b-transparent ml-1"></div>
+                        {/* Video Player */}
+                        <div className="w-full h-full bg-black">
+                            {videoSrc && videoSrc.includes('vimeo.com') ? (
+                                <iframe
+                                    src={`https://player.vimeo.com/video/${videoSrc.split('/').pop()}?autoplay=1&title=0&byline=0&portrait=0`}
+                                    className="w-full h-full"
+                                    frameBorder="0"
+                                    allow="autoplay; fullscreen; picture-in-picture"
+                                    allowFullScreen
+                                    title={title}
+                                ></iframe>
+                            ) : (
+                                <div className="w-full h-full flex items-center justify-center text-neutral-500 font-mono">
+                                    VIDEO SOURCE NOT FOUND
                                 </div>
-                            </div>
+                            )}
                         </div>
 
                         {/* Decorative UI Elements */}

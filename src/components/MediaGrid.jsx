@@ -4,11 +4,11 @@ import { useNavigate } from 'react-router-dom';
 import VideoModal from './VideoModal';
 
 const items = [
-    { id: 1, type: 'video', title: 'NEON NIGHTS', src: 'https://placehold.co/600x400/111/FFF?text=VIDEO+1' },
-    { id: 2, type: 'photo', title: 'URBAN DECAY', src: 'https://placehold.co/400x600/111/FFF?text=PHOTO+1' },
-    { id: 3, type: 'video', title: 'STATIC NOISE', src: 'https://placehold.co/600x400/111/FFF?text=VIDEO+2' },
+    { id: 1, type: 'video', title: 'Feel Like It | Belle Dame', src: 'https://placehold.co/600x400/111/FFF?text=FEEL+LIKE+IT+|+BELLE+DAME', videoSrc: 'https://vimeo.com/754906899' },
+    { id: 2, type: 'photo', title: 'URBAN DECAY', src: 'https://placehold.co/400x600/111/FFF?text=PHOTO+COLLECTION+1' },
+    { id: 3, type: 'video', title: 'Modern Act | One Sick Plan', src: 'https://placehold.co/600x400/111/FFF?text=MODERN+ACT+|+ONE+SICK+PLAN ', videoSrc: 'https://vimeo.com/830650950' },
     { id: 4, type: 'photo', title: 'CONCRETE', src: 'https://placehold.co/400x500/111/FFF?text=PHOTO+2' },
-    { id: 5, type: 'video', title: 'GLITCH', src: 'https://placehold.co/600x400/111/FFF?text=VIDEO+3' },
+    { id: 5, type: 'video', title: 'The Dazed Minded | Live at Denmark Studios', src: 'https://placehold.co/600x400/111/FFF?text=THE+DAZED+MINDED\n+|+LIVE+AT+DENMARK+STUDIOS', videoSrc: 'https://vimeo.com/917658594' },
     { id: 6, type: 'photo', title: 'VOID', src: 'https://placehold.co/400x600/111/FFF?text=PHOTO+3' },
 ];
 
@@ -46,7 +46,7 @@ const MediaGrid = () => {
 
                         <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                             <h3 className="text-2xl font-bold tracking-widest text-white uppercase glitch-text">
-                                {item.title}
+                                {/* {item.title} */}
                             </h3>
                         </div>
 
@@ -60,7 +60,7 @@ const MediaGrid = () => {
             <VideoModal
                 isOpen={!!selectedVideo}
                 onClose={() => setSelectedVideo(null)}
-                videoSrc={selectedVideo?.src}
+                videoSrc={selectedVideo?.videoSrc}
                 title={selectedVideo?.title}
             />
         </>
