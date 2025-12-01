@@ -1,5 +1,6 @@
 import GlitchHeader from '../components/GlitchHeader'
 import MediaGrid from '../components/MediaGrid'
+import About from '../components/About'
 import { motion } from 'framer-motion'
 
 const Home = () => {
@@ -46,6 +47,9 @@ const Home = () => {
                 <MediaGrid />
             </section>
 
+            {/* About Section */}
+            <About />
+
             {/* Contact Section */}
             <section id="contact" className="min-h-[50vh] w-full flex flex-col items-center justify-center bg-neutral-950 relative border-t border-neutral-900">
                 <div className="text-center">
@@ -56,9 +60,7 @@ const Home = () => {
                         hello@harls.com
                     </a>
                     <div className="mt-8 flex gap-4 justify-center">
-                        <a href="#" className="text-neutral-500 hover:text-[var(--color-accent)] transition-colors">INSTAGRAM</a>
-                        <a href="#" className="text-neutral-500 hover:text-[var(--color-accent)] transition-colors">VIMEO</a>
-                        <a href="#" className="text-neutral-500 hover:text-[var(--color-accent)] transition-colors">TWITTER</a>
+                        <a href="https://www.instagram.com/harls_98/" className="text-neutral-500 hover:text-[var(--color-accent)] transition-colors">INSTAGRAM</a>
                     </div>
                 </div>
                 <footer className="absolute bottom-4 text-xs font-mono text-neutral-800">
