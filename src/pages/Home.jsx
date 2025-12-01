@@ -15,9 +15,9 @@ const Home = () => {
             <nav className="fixed top-0 w-full p-6 flex justify-between items-center z-50 mix-blend-difference">
                 <span className="font-mono text-sm tracking-widest">EST. 2024</span>
                 <div className="flex gap-6 font-mono text-sm">
-                    <a href="#work" className="hover:text-[var(--color-accent)] transition-colors">WORK</a>
-                    <a href="#about" className="hover:text-[var(--color-accent)] transition-colors">ABOUT</a>
-                    <a href="#contact" className="hover:text-[var(--color-accent)] transition-colors">CONTACT</a>
+                    <button onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-[var(--color-accent)] transition-colors">WORK</button>
+                    <button onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-[var(--color-accent)] transition-colors">ABOUT</button>
+                    <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="hover:text-[var(--color-accent)] transition-colors">CONTACT</button>
                 </div>
             </nav>
 
