@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect } from 'react';
 
 const VideoModal = ({ isOpen, onClose, videoSrc, title }) => {
     return (
@@ -46,13 +47,44 @@ const VideoModal = ({ isOpen, onClose, videoSrc, title }) => {
                         </div>
 
                         {/* Decorative UI Elements */}
-                        <div className="absolute bottom-4 left-4 text-[10px] font-mono text-[var(--color-accent)]">
-                            REC ● 00:00:00:00
-                        </div>
+                        {/* Decorative UI Elements */}
+                        <GlitchRecIndicator />
                     </motion.div>
                 </motion.div>
             )}
         </AnimatePresence>
+    );
+};
+
+const GlitchRecIndicator = () => {
+    const [time, setTime] = useState('00:00:00:00');
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            // Randomly glitch the time
+            if (Math.random() > 0.7) {
+                const randomTime = Math.floor(Math.random() * 99999999).toString().padStart(8, '0');
+                setTime(`${randomTime.slice(0, 2)}:${randomTime.slice(2, 4)}:${randomTime.slice(4, 6)}:${randomTime.slice(6, 8)}`);
+            } else {
+                // Normal increment (simulated)
+                const now = new Date();
+                setTime(now.toTimeString().split(' ')[0] + ':' + Math.floor(now.getMilliseconds() / 10).toString().padStart(2, '0'));
+            }
+        }, 100);
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <div className="absolute bottom-4 left-4 text-[10px] font-mono text-[var(--color-accent)] flex items-center gap-2">
+            <motion.span
+                animate={{ opacity: [1, 0, 1] }}
+                transition={{ duration: 1, repeat: Infinity }}
+                className="text-red-500"
+            >
+                ●
+            </motion.span>
+            REC <span className="w-24 inline-block">{time}</span>
+        </div>
     );
 };
 
