@@ -22,14 +22,14 @@ const Home = () => {
 
             {/* Hero Section */}
             <section className="h-screen w-full flex flex-col items-center justify-center relative overflow-hidden">
-                <GlitchHeader text="harlow" />
+                <GlitchHeader text="sam harlow" />
                 <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1, duration: 1 }}
                     className="mt-6 font-mono text-sm text-neutral-500 tracking-[0.5em] uppercase text-center px-4"
                 >
-                    Editor / Photographer / Legend
+                    Editor / Photographer
                 </motion.p>
 
                 <div className="absolute bottom-10 animate-bounce">
@@ -62,7 +62,7 @@ const Home = () => {
                     </div>
                 </div>
                 <footer className="absolute bottom-4 text-xs font-mono text-neutral-800">
-                    © 2025 HARLS. ALL RIGHTS RESERVED.
+                    © 2025 SAM HARLOW. ALL RIGHTS RESERVED.
                 </footer>
             </section>
         </div>

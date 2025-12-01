@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
-const GlitchHeader = ({ text = "harls" }) => {
+const GlitchHeader = ({ text = "sam harlow" }) => {
     const [isGlitching, setIsGlitching] = useState(false);
 
     useEffect(() => {
