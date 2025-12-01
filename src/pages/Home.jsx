@@ -1,11 +1,13 @@
 import GlitchHeader from '../components/GlitchHeader'
 import MediaGrid from '../components/MediaGrid'
 import About from '../components/About'
+import HackedTitle from '../components/HackedTitle'
 import { motion } from 'framer-motion'
 
 const Home = () => {
     return (
         <div className="min-h-screen w-full bg-[var(--color-bg)] text-[var(--color-text)] selection:bg-[var(--color-accent)] selection:text-black">
+            <HackedTitle />
             {/* Effects Overlays */}
             <div className="noise-overlay"></div>
             <div className="scanlines"></div>
