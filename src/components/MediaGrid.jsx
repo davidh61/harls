@@ -11,7 +11,7 @@ const items = [
     { id: 5, type: 'video', title: 'The Dazed Minded | Live at Denmark Studios', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1764621084/The_Dazed_Minded_Live_at_Denmark_Studios_vzonld.jpg', videoSrc: 'https://vimeo.com/917658594' },
     { id: 6, type: 'photo', title: 'VOID', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1764865104/DSCF2960_zypdl3.jpg' },
     { id: 7, type: 'video', title: 'Empire To Ashes - Me Myself & I ', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1764620985/Empire_To_Ashes_-_Me_Myself_I_pkxjqi.jpg', videoSrc: 'https://vimeo.com/771360565' },
-    { id: 8, type: 'photo', title: 'Sammny Vincent', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1764864821/DSCF3374_kjmg8p.jpg' }
+    { id: 8, type: 'photo', title: 'Sammny Vincent', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1764864798/DSCF3317_arwipu.jpg' }
 ];
 
 const MediaGrid = () => {

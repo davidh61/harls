@@ -53,7 +53,7 @@ const ProjectDetail = () => {
                 </div>
             )}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {project.images.map((img, index) => (
                     <motion.div
                         key={index}
@@ -61,7 +61,7 @@ const ProjectDetail = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-50px" }}
                         transition={{ duration: 0.4 }}
-                        className={`relative overflow-hidden ${index % 3 === 0 ? 'md:col-span-2' : ''}`}
+                        className={`relative overflow-hidden ${(index % 4 === 0 || index % 4 === 3) ? 'md:col-span-2' : ''}`}
                     >
                         <img
                             src={img}
