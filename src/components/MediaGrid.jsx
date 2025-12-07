@@ -5,12 +5,13 @@ import VideoModal from './VideoModal';
 
 const items = [
     { id: 1, type: 'video', title: 'Feel Like It | Belle Dame', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1764621230/Feel_Like_It_Belle_Dame_iyhxep.jpg', videoSrc: 'https://vimeo.com/754906899' },
-    { id: 2, type: 'photo', title: 'URBAN DECAY', src: 'https://placehold.co/400x600/111/FFF?text=PHOTO+COLLECTION+1' },
+    { id: 2, type: 'photo', title: 'Afterparty', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1764763617/DSCF0170_uexv18.jpg' },
     { id: 3, type: 'video', title: 'Modern Act | One Sick Plan', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1764621158/Modern_Act_One_Sick_Plan_r4eivq.jpg', videoSrc: 'https://vimeo.com/830650950' },
-    { id: 4, type: 'photo', title: 'CONCRETE', src: 'https://placehold.co/400x500/111/FFF?text=PHOTO+2' },
+    { id: 4, type: 'photo', title: 'Conflict Manager', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1764864332/DSCF2048_mqzuvw.jpg' },
     { id: 5, type: 'video', title: 'The Dazed Minded | Live at Denmark Studios', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1764621084/The_Dazed_Minded_Live_at_Denmark_Studios_vzonld.jpg', videoSrc: 'https://vimeo.com/917658594' },
-    { id: 6, type: 'photo', title: 'VOID', src: 'https://placehold.co/400x600/111/FFF?text=PHOTO+3' },
-    { id: 7, type: 'video', title: 'Empire To Ashes - Me Myself & I ', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1764620985/Empire_To_Ashes_-_Me_Myself_I_pkxjqi.jpg', videoSrc: 'https://vimeo.com/771360565' }
+    { id: 6, type: 'photo', title: 'VOID', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1764865104/DSCF2960_zypdl3.jpg' },
+    { id: 7, type: 'video', title: 'Empire To Ashes - Me Myself & I ', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1764620985/Empire_To_Ashes_-_Me_Myself_I_pkxjqi.jpg', videoSrc: 'https://vimeo.com/771360565' },
+    { id: 8, type: 'photo', title: 'Sammny Vincent', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1764864821/DSCF3374_kjmg8p.jpg' }
 ];
 
 const MediaGrid = () => {
