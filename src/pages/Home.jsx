@@ -25,7 +25,7 @@ const Home = () => {
 
             {/* Hero Section */}
             <section className="h-screen w-full flex flex-col items-center justify-center relative overflow-hidden">
-                <GlitchHeader text="sam harlow" />
+                <GlitchHeader text="SAM HARLOW" />
                 <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

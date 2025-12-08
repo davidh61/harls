@@ -24,12 +24,10 @@ const About = () => {
 
                     <div className="space-y-6 text-neutral-400 text-lg leading-relaxed max-w-xl">
                         <p>
-                            Sam Harlow is a multidisciplinary editor and photographer obsessed with the space between frames.
-                            Specializing in high-impact visual narratives, Sam blends raw emotion with technical precision to create work that doesn't just look good—it feels alive.
+                            I've spent the last few years creating social content for some of the biggest sporting organisations in the UK, including the England FA, FA Cup, WSL, ECB, Team GB, and West Ham. I've also edited music videos for a range of artists and bands across multiple genres.
                         </p>
                         <p>
-                            From fast-paced music videos to atmospheric brand campaigns, the goal is always the same:
-                            <span className="text-white font-bold"> capture the signal in the noise.</span>
+                            More recently, I’ve ventured into photography, focusing on live events, shooting gigs, and documenting the energy, atmosphere, and emotion of performance.
                         </p>
                     </div>
 
@@ -57,7 +55,7 @@ const About = () => {
                         <div className="w-full h-full bg-neutral-900 relative overflow-hidden group">
                             {/* Placeholder for Sam's portrait */}
                             <img
-                                src="https://placehold.co/600x800/111/FFF?text=SAM+HARLOW"
+                                src="https://res.cloudinary.com/dxmcgwo5g/image/upload/v1765203299/WhatsApp_Image_2025-12-08_at_14.04.07_hmup8q.jpg"
                                 alt="Sam Harlow"
                                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                             />
