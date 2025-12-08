@@ -35,7 +35,7 @@ const About = () => {
                     <div className="pt-8 border-t border-neutral-800">
                         <h3 className="font-mono text-sm text-white mb-4 uppercase tracking-widest">Toolkit</h3>
                         <div className="flex flex-wrap gap-3">
-                            {['Photoshop', 'Graybo', 'WSC'].map((skill, i) => (
+                            {['Premiere Pro', 'After Effects', 'DaVinci Resolve', 'Blender', 'Photoshop', 'Graybo', 'WSC'].map((skill, i) => (
                                 <span key={i} className="px-3 py-1 border border-neutral-800 text-xs font-mono text-neutral-500 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors cursor-default">
                                     {skill}
                                 </span>

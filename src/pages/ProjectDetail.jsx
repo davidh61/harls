@@ -43,7 +43,7 @@ const ProjectDetail = () => {
                     transition={{ delay: 0.2 }}
                     className="font-mono text-neutral-400 max-w-xl"
                 >
-                    {project.description}
+                    {/* {project.description} */}
                 </motion.p>
             </header>
 
