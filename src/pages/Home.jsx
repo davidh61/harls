@@ -7,7 +7,6 @@ import { motion } from 'framer-motion'
 const Home = () => {
     return (
         <div className="min-h-screen w-full bg-[var(--color-bg)] text-[var(--color-text)] selection:bg-[var(--color-accent)] selection:text-black">
-            <HackedTitle />
             {/* Effects Overlays */}
             <div className="noise-overlay"></div>
             <div className="scanlines"></div>
@@ -59,7 +58,7 @@ const Home = () => {
                         Let's Create
                     </h2>
                     <a href="mailto:hello@harls.com" className="text-lg md:text-xl font-mono text-neutral-400 hover:text-white transition-colors">
-                        hello@harls.com
+                        hello@samharlow.co.uk
                     </a>
                     <div className="mt-8 flex gap-4 justify-center">
                         <a href="https://www.instagram.com/harls_98/" className="text-neutral-500 hover:text-[var(--color-accent)] transition-colors">INSTAGRAM</a>
