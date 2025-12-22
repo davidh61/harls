@@ -57,7 +57,7 @@ const Home = () => {
                     <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8 hover:text-[var(--color-accent)] transition-colors cursor-pointer">
                         Let's Create
                     </h2>
-                    <a href="mailto:hello@harls.com" className="text-lg md:text-xl font-mono text-neutral-400 hover:text-white transition-colors">
+                    <a href="mailto:hello@samharlow.co.uk" className="text-lg md:text-xl font-mono text-neutral-400 hover:text-white transition-colors">
                         hello@samharlow.co.uk
                     </a>
                     <div className="mt-8 flex gap-4 justify-center">
