@@ -18,6 +18,11 @@ export const projects = {
         title: "Sammy Vincent",
         description: "Visualizing the empty spaces between moments.",
         cloudinaryTag: "project-sammy-vincent"
+    },
+    10: {
+        title: "Conflict Manager | 2026",
+        description: "A study of brutalist architecture and urban textures.",
+        cloudinaryTag: "project-conflict-manager-2026"
     }
 };
 
