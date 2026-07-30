@@ -14,6 +14,8 @@ const items = [
     { id: 8, type: 'photo', title: 'Sammny Vincent', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1764864798/DSCF3317_arwipu.jpg' },
     { id: 9, type: 'video', title: 'Modern Act | One Sick Plan ', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1765212851/thumb_6_swn7ls.jpg', videoSrc: 'https://vimeo.com/830650950' },
     { id: 10, type: 'photo', title: 'Conflict Manager | 2026 ', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1769960033/DSCF5875_zryiyh.jpg' },
+    { id: 11, type: 'photo', title: 'EEPS ', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1775742558/DSCF8480_zv36q9.jpg' },
+    { id: 12, type: 'photo', title: 'The Strand ', src: 'https://res.cloudinary.com/dxmcgwo5g/image/upload/v1783366129/DSCF1130_qkrwgh.jpg' },
 ];
 
 const MediaGrid = () => {

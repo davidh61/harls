@@ -23,6 +23,16 @@ export const projects = {
         title: "Conflict Manager | 2026",
         description: "A study of brutalist architecture and urban textures.",
         cloudinaryTag: "project-conflict-manager-2026"
+    },
+    11: {
+        title: "EEPS",
+        description: "A study of brutalist architecture and urban textures.",
+        cloudinaryTag: "project-eeps"
+    },
+    12: {
+        title: "The Strand",
+        description: "A study of coastal landscapes and natural formations.",
+        cloudinaryTag: "project-the-strand"
     }
 };
 
